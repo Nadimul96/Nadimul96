@@ -3,13 +3,22 @@
   "owner": "Nadimul96",
   "author": "Nadimul Haque",
   "banner": {
-    "eyebrow": "DATA ENGINEERING  ·  PRODUCT ENGINEERING  ·  NEW YORK",
+    "eyebrow": "DATA ENGINEERING  \u00b7  PRODUCT ENGINEERING  \u00b7  NEW YORK",
     "name": "Nadimul Haque",
     "headline": "Every number traceable to its source.",
     "subline": "I build data products end to end, designed to refuse unverified output.",
     "motifLabels": {
-      "sources": ["pdf", "xlsx", "eml", "csv", "api"],
-      "stages": ["anchor", "verify"],
+      "sources": [
+        "pdf",
+        "xlsx",
+        "eml",
+        "csv",
+        "api"
+      ],
+      "stages": [
+        "anchor",
+        "verify"
+      ],
       "output": "ship",
       "blocked": "blocked"
     }
@@ -20,12 +29,18 @@
       "name": "bestdecks",
       "kicker": "Evidence-gated proposal decks",
       "line": "Drafts a tailored deck per target company, then blocks delivery if any factual claim can't be matched to retained source text.",
-      "stack": ["TypeScript", "Next.js", "SQLite", "Cloudflare"],
+      "stack": [
+        "TypeScript",
+        "Next.js",
+        "SQLite",
+        "Gemini"
+      ],
       "tag": "Live at bestdecks.co",
       "media": {
         "type": "screenshot",
-        "src": "../bestdecks/docs/media/bestdecks-cover-still.png",
-        "position": "50% 55%"
+        "src": "../bestdecks/docs/media/screenshot-evidence-gate.png",
+        "position": "38% 6%",
+        "zoom": 1.55
       }
     },
     {
@@ -33,39 +48,55 @@
       "name": "remi-intake-engine",
       "kicker": "Provenance-tracked document intake",
       "line": "Turns memos, rent rolls and email threads into reviewed facts, each linked to the page, cell or message it came from.",
-      "stack": ["TypeScript", "Postgres", "Temporal", "Python"],
+      "stack": [
+        "TypeScript",
+        "Postgres",
+        "Temporal",
+        "Python"
+      ],
       "media": {
         "type": "html",
         "src": "assets/source/remi-lineage.html",
-        "caption": "schema lineage · packages/db/src/migrations"
+        "caption": "schema lineage \u00b7 packages/db/src/migrations"
       }
     },
     {
       "repo": "kalshi-vol-edge",
       "name": "kalshi-vol-edge",
       "kicker": "Settlement-aware trading system",
-      "line": "Kalshi BTC bracket trading where the exchange is the source of truth, plus post-mortems on what the live data showed.",
-      "stack": ["Python", "asyncio", "SQLite"],
+      "line": "Kalshi BTC bracket trading with a live model dashboard, exchange-as-truth reconciliation, and post-mortems on what the live data showed.",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "SQLite"
+      ],
       "media": {
-        "type": "terminal",
-        "src": "assets/source/kalshi-reconcile.txt",
-        "title": "recorded fixtures · no credentials needed"
-      }
+        "type": "screenshot",
+        "src": {
+          "light": "../kalshi-vol-edge/docs/media/dashboard-basis-light.webp",
+          "dark": "../kalshi-vol-edge/docs/media/dashboard-live.webp"
+        },
+        "position": "0% 18%",
+        "zoom": 1.8
+      },
+      "tag": "Live report"
     },
     {
       "repo": "slideshow-renderer",
       "name": "slideshow-renderer",
       "kicker": "Prompt-to-video pipeline",
-      "line": "A one-line topic becomes validated slide copy as JSON, then a 9:16 video rendered with Remotion.",
-      "stack": ["TypeScript", "Remotion", "OpenAI"],
+      "line": "A one-line topic becomes validated slide copy, edited in a local studio and rendered to 9:16 video with Remotion. Works with free LLM keys.",
+      "stack": [
+        "TypeScript",
+        "Remotion",
+        "React"
+      ],
       "media": {
-        "type": "frames",
-        "src": [
-          "assets/source/slideshow-frame-1.jpg",
-          "assets/source/slideshow-frame-2.jpg",
-          "assets/source/slideshow-frame-3.jpg"
-        ]
-      }
+        "type": "screenshot",
+        "src": "../slideshow-renderer/docs/media/themes.webp",
+        "position": "50% 45%"
+      },
+      "tag": "Live demo"
     }
   ]
 }
