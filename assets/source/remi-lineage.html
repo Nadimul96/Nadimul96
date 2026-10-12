@@ -1,0 +1,34 @@
+<!-- Schema lineage of one accepted fact in remi-intake-engine.
+     Table and column names are taken from packages/db/src/migrations (001, 004, 007, 008).
+     Rendered inside a card's media area; colors come from the card's CSS variables. -->
+<style>
+  .lin { position: absolute; inset: 0; padding: 22px 26px; display: grid; grid-template-columns: 1fr auto; align-content: center; align-items: center; gap: 16px; font-family: var(--mono); }
+  .chain { position: relative; display: flex; flex-direction: column; gap: 9px; }
+  .chain::before { content: ""; position: absolute; left: 11px; top: 16px; bottom: 16px; width: 1.5px; background: var(--line); }
+  .row { position: relative; display: flex; align-items: center; gap: 12px; height: 39px; }
+  .dot { position: relative; z-index: 1; width: 23px; height: 23px; border-radius: 50%; background: var(--panel); border: 1.5px solid var(--line); display: grid; place-items: center; flex: none; }
+  .dot::after { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--faint); }
+  .row.final .dot { border-color: var(--verified); }
+  .row.final .dot::after { background: var(--verified); }
+  .chip { flex: 1; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; height: 39px; padding: 0 14px; border: 1px solid var(--panelEdge); border-radius: 9px; background: var(--panel); }
+  .t { color: var(--ink); font-size: 13.5px; font-weight: 500; }
+  .k { color: var(--faint); font-size: 11.5px; line-height: 39px; white-space: nowrap; }
+  .row.final .chip { border-color: color-mix(in srgb, var(--verified) 45%, var(--panelEdge)); }
+  .side { width: 168px; display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+  .note { border: 1px dashed var(--line); border-radius: 9px; padding: 10px 12px; }
+  .note .t { font-size: 12px; display: block; white-space: nowrap; }
+  .note .k { line-height: 1.5; display: block; white-space: normal; margin-top: 3px; }
+</style>
+<div class="lin">
+  <div class="chain">
+    <div class="row"><span class="dot"></span><span class="chip"><span class="t">source_items</span><span class="k">upload · email</span></span></div>
+    <div class="row"><span class="dot"></span><span class="chip"><span class="t">artifact_blobs</span><span class="k">sha256</span></span></div>
+    <div class="row"><span class="dot"></span><span class="chip"><span class="t">provenance_anchors</span><span class="k">page · sheet · msg</span></span></div>
+    <div class="row"><span class="dot"></span><span class="chip"><span class="t">extracted_candidates</span><span class="k">citations</span></span></div>
+    <div class="row final"><span class="dot"></span><span class="chip"><span class="t">accepted_fact_records</span><span class="k">anchor ids</span></span></div>
+  </div>
+  <div class="side">
+    <div class="note"><span class="t">review_history</span><span class="k">every decision appended</span></div>
+    <div class="note"><span class="t">superseded_at</span><span class="k">old values kept, never deleted</span></div>
+  </div>
+</div>

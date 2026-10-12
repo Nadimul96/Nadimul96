@@ -1,0 +1,11 @@
+$ kve reconcile --dry-run
+dry run: 3 local records vs 3 recorded exchange fills from data/sample/reconcile
+reconciliation: 4 discrepancies (critical=3 warning=0 info=1)
+  [critical] KXBTC15M-26MAR222045-45          fee_cost           local='0.0267' api='0.1066'
+             Fee mismatch (maker estimate for a taker fill?): local=0.0267 api=0.1066
+  [critical] KXBTC15M-26MAR222045-45          is_taker           local=False api=True
+             Taker flag mismatch: fee and P&L estimates are wrong.
+  [critical] KXBTC15M-26MAR222100-00          fill_id            local='vol_edge_15m_late_BTC_KXBTC15M-26MAR222100' api=None
+             Local record (no @ 2026-03-23 00:55:40+00:00) has no matching exchange fill: phantom trade in local state.
+  [info    ] KXBTC15M-26MAR222130-30          fill_id            local=None api='f-0003'
+             Exchange fill (yes @ 2026-03-23T01:26:12Z) is not in local state.
