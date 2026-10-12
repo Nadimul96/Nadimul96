@@ -1,7 +1,7 @@
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img alt="Nadi Haque. Data engineering, product engineering, New York." src="assets/banner-light.svg" width="100%">
+  <img alt="Nadi Haque. Data and product engineer, New York." src="assets/banner-light.svg" width="100%">
 </picture>
 </p>
 

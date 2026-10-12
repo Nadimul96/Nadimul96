@@ -3,25 +3,8 @@
   "owner": "Nadimul96",
   "author": "Nadimul Haque",
   "banner": {
-    "eyebrow": "DATA ENGINEERING  \u00b7  PRODUCT ENGINEERING  \u00b7  NEW YORK",
-    "name": "Nadimul Haque",
-    "headline": "Every number traceable to its source.",
-    "subline": "I build data products end to end, designed to refuse unverified output.",
-    "motifLabels": {
-      "sources": [
-        "pdf",
-        "xlsx",
-        "eml",
-        "csv",
-        "api"
-      ],
-      "stages": [
-        "anchor",
-        "verify"
-      ],
-      "output": "ship",
-      "blocked": "blocked"
-    }
+    "name": "Nadi Haque",
+    "subline": "Data and product engineer  \u00b7  New York"
   },
   "cards": [
     {
