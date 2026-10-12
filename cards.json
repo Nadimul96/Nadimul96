@@ -47,7 +47,7 @@
       "repo": "remi-intake-engine",
       "name": "remi-intake-engine",
       "kicker": "Provenance-tracked document intake",
-      "line": "Turns memos, rent rolls and email threads into reviewed facts, each linked to the page, cell or message it came from.",
+      "line": "Turns memos, rent rolls and email threads into reviewed facts, then flags where documents disagree, down to the cell or line.",
       "stack": [
         "TypeScript",
         "Postgres",
@@ -55,9 +55,13 @@
         "Python"
       ],
       "media": {
-        "type": "html",
-        "src": "assets/source/remi-lineage.html",
-        "caption": "schema lineage \u00b7 packages/db/src/migrations"
+        "type": "screenshot",
+        "src": {
+          "light": "../remi-intake-engine/docs/media/conflicts.webp",
+          "dark": "../remi-intake-engine/docs/media/conflicts-dark.webp"
+        },
+        "position": "74% 40%",
+        "zoom": 2.0
       }
     },
     {
