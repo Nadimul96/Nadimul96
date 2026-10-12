@@ -1,0 +1,23 @@
+{
+  "name": "nadimul96-profile",
+  "private": true,
+  "description": "Build scripts for the github.com/Nadimul96 profile README: header banner, featured-work cards, and repo social previews.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-banner.mjs && node scripts/build-cards.mjs",
+    "build:banner": "node scripts/build-banner.mjs",
+    "build:cards": "node scripts/build-cards.mjs",
+    "preview": "node scripts/preview-readme.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "5.3.0",
+    "@fontsource/jetbrains-mono": "5.3.0",
+    "github-markdown-css": "5.9.0",
+    "opentype.js": "2.0.0",
+    "playwright-core": "1.64.0",
+    "sharp": "0.35.5"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "$comment": "All copy for the banner, featured-work cards and social previews. Edit text here, then run `npm run build`. Image paths are relative to this file; the sibling repos are expected next to this one (../bestdecks, ../slideshow-renderer, ...). Keep volatile numbers (test counts, P&L) off the cards.",
+  "owner": "Nadimul96",
+  "author": "Nadimul Haque",
+  "banner": {
+    "eyebrow": "DATA ENGINEERING  ·  PRODUCT ENGINEERING  ·  NEW YORK",
+    "name": "Nadimul Haque",
+    "headline": "Every number traceable to its source.",
+    "subline": "I build data products end to end, designed to refuse unverified output.",
+    "motifLabels": {
+      "sources": ["pdf", "xlsx", "eml", "csv", "api"],
+      "stages": ["anchor", "verify"],
+      "output": "ship",
+      "blocked": "blocked"
+    }
+  },
+  "cards": [
+    {
+      "repo": "bestdecks",
+      "name": "bestdecks",
+      "kicker": "Evidence-gated proposal decks",
+      "line": "Drafts a tailored deck per target company, then blocks delivery if any factual claim can't be matched to retained source text.",
+      "stack": ["TypeScript", "Next.js", "SQLite", "Cloudflare"],
+      "tag": "Live at bestdecks.co",
+      "media": {
+        "type": "screenshot",
+        "src": "../bestdecks/docs/media/bestdecks-cover-still.png",
+        "position": "50% 55%"
+      }
+    },
+    {
+      "repo": "remi-intake-engine",
+      "name": "remi-intake-engine",
+      "kicker": "Provenance-tracked document intake",
+      "line": "Turns memos, rent rolls and email threads into reviewed facts, each linked to the page, cell or message it came from.",
+      "stack": ["TypeScript", "Postgres", "Temporal", "Python"],
+      "media": {
+        "type": "html",
+        "src": "assets/source/remi-lineage.html",
+        "caption": "schema lineage · packages/db/src/migrations"
+      }
+    },
+    {
+      "repo": "kalshi-vol-edge",
+      "name": "kalshi-vol-edge",
+      "kicker": "Settlement-aware trading system",
+      "line": "Kalshi BTC bracket trading where the exchange is the source of truth, plus post-mortems on what the live data showed.",
+      "stack": ["Python", "asyncio", "SQLite"],
+      "media": {
+        "type": "terminal",
+        "src": "assets/source/kalshi-reconcile.txt",
+        "title": "recorded fixtures · no credentials needed"
+      }
+    },
+    {
+      "repo": "slideshow-renderer",
+      "name": "slideshow-renderer",
+      "kicker": "Prompt-to-video pipeline",
+      "line": "A one-line topic becomes validated slide copy as JSON, then a 9:16 video rendered with Remotion.",
+      "stack": ["TypeScript", "Remotion", "OpenAI"],
+      "media": {
+        "type": "frames",
+        "src": [
+          "assets/source/slideshow-frame-1.jpg",
+          "assets/source/slideshow-frame-2.jpg",
+          "assets/source/slideshow-frame-3.jpg"
+        ]
+      }
+    }
+  ]
+}
