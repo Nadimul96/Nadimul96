@@ -1,11 +1,11 @@
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img alt="Nadimul Haque. Data engineering, product engineering, New York. Every number traceable to its source." src="assets/banner-light.svg" width="100%">
+  <img alt="Nadi Haque. Data engineering, product engineering, New York." src="assets/banner-light.svg" width="100%">
 </picture>
 </p>
 
-I build data products end to end: the pipelines that make the data trustworthy, the rules or models that turn it into decisions, and the product surface people actually use. Based in New York. Open to Data Engineering, Product Engineering, and Data Product roles.
+I build data & AI products end to end that make non-technical people into AI-native SMEs. Based in New York.
 
 ### Selected work
 
